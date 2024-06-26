@@ -1,0 +1,9 @@
+@mixin Font($size,$lineheight) {
+    font-size: $size;
+    line-height: $lineheight;
+}
+@mixin FlexBox($row, $column) {
+    display: flex;
+    justify-content: $row;
+    align-items: $column;
+}

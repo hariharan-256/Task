@@ -1,0 +1,10 @@
+export const TOGGLE_SIDEBAR = "TOGGLE_SIDEBAR";
+
+//Get Employees types....
+export const GET_PRODUCTS_REQUEST = "GET_PRODUCTS_REQUEST"; 
+export const GET_PRODUCTS_SUCCESS = "GET_PRODUCTS_SUCCESS"; 
+export const GET_PRODUCTS_RESET = "GET_PRODUCTS_RESET"; 
+export const GET_PRODUCTS_FAILURE = "GET_PRODUCTS_FAILURE"; 
+
+//Update product
+export const UPDATE_PRODUCTS = "UPDATE_PRODUCTS"; 

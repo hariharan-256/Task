@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./variable.scss";
+@import "./mixins.scss";
+@import "./fonts.scss";
+
+// basic overwriting styles
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-m);
+    color: var(--body-bg);
+    background-color: var(--body);
+    @include Font(0.875rem, 1.375rem);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: var(--font-m);
+    @include Font(0.875rem, 1.375rem);
+}
+
+// input number icon removing
+input[type="number"] {
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+input:focus {
+    outline-color: var(--base-8);
+}
